@@ -9,28 +9,6 @@ set background=dark
 "The default leader is \, but a comma is better
 let mapleader=','
 
-"Activate relative line numbers
-set relativenumber
-
-"Activate line numbers
-set number
-
-
-
-highlight Cursor guifg=white guibg=green
-set guicursor=n-v-c:block-Cursor
-
-"Slow down cursor blinking speed
-set guicursor+=n-v-c:blinkon600-blinkoff400
-
-
-" Highlight the current line
-set cursorline
-" Set cursorline colors
-highlight CursorLine ctermbg=235
-" Set color of number column on cursorline
-highlight CursorLineNR ctermbg=235 ctermfg=white
-
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
@@ -76,13 +54,32 @@ set linespace=10
 set t_CO=256
 
 "We don't want Gui tabs.
-set guioptions-=e
+"set guioptions-=e
 
 "Remove scrollbar
 set guioptions-=l
 set guioptions-=L
 set guioptions-=r
 set guioptions-=R
+
+"Activate relative line numbers
+set relativenumber
+
+"Activate line numbers
+set number
+
+highlight Cursor guifg=white guibg=green
+set guicursor=n-v-c:block-Cursor
+
+"Slow down cursor blinking speed
+set guicursor+=n-v-c:blinkon600-blinkoff400
+
+" Highlight the current line
+set cursorline
+" Set cursorline colors
+highlight CursorLine ctermbg=235
+" Set color of number column on cursorline
+highlight CursorLineNR ctermbg=235 ctermfg=white
 
 
 
