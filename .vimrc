@@ -148,6 +148,16 @@ nmap <D-r> :CtrlPBufTag<cr>
 "Go to most reacently opened files
 nmap <D-e> :CtrlPMRUFiles<cr>
 
+"/
+"/ Greplace.vim
+"/
+" We want to use Ag for the search
+set grepprg=ag
+
+let g:grep_cmd_opts = '--line-numbers --noheading'
+
+
+
 
 "/
 "/ NERDTree
